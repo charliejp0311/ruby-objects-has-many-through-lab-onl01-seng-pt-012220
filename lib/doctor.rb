@@ -23,7 +23,7 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
-  def patients
+  def patients(date = nil)
     ps = []
     Appointment.all.each do |appt|
       if appt.doctor == self
