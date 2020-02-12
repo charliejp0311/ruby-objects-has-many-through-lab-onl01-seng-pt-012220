@@ -24,4 +24,14 @@ class Artist
     song.artist = self
   end
 
+  def genres 
+    gs = []
+    Song.all.each do |song|
+      if song.artist = self
+        gs << song.genre 
+      end
+    end
+    gs
+  end
+
 end
