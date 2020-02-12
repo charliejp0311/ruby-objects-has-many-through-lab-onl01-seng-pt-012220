@@ -30,6 +30,7 @@ class Doctor
         ps << appt.patient
       end
     end
+    binding.pry
     ps
   end
 
