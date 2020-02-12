@@ -28,7 +28,7 @@ class Doctor
     Appointment.all.each do |appt|
       if appt.doctor == self
         ps << appt.patient
-        binding.pry
+        #binding.pry
       end
     end
 
