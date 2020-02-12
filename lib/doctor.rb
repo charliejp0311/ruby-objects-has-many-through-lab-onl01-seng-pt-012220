@@ -4,11 +4,11 @@ class Doctor
   @@all = []
   def initialize(name)
     @name = name
-    save 
+    save
   end
 
-  def save 
+  def save
     @@all << self
   end
-  
+
 end
