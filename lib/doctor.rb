@@ -23,4 +23,14 @@ class Doctor
     Appointment.new(date, patient, self)
   end
 
+  def patients
+    patties = []
+    Appointment.all.each do |appt|
+      if appt.doctor == self 
+        patties << appt.patient
+      end
+    end
+    patties
+  end
+
 end
