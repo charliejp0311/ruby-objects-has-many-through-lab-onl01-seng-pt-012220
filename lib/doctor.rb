@@ -26,7 +26,7 @@ class Doctor
   def patients
     patties = []
     Appointment.all.each do |appt|
-      if appt.doctor == self 
+      if appt.doctor == self
         patties << appt.patient
       end
     end
