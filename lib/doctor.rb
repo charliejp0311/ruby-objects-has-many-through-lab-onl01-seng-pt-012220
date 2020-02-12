@@ -25,7 +25,7 @@ class Doctor
 
   def patients
     ps = []
-    Appointment.all.each do |appt| 
+    Appointment.all.each do |appt|
       if appt.doctor == self
         ps << appt.patient
       end
