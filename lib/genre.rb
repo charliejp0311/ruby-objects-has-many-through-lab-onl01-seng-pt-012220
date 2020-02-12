@@ -2,13 +2,13 @@ require "pry"
 class Genre
   attr_accessor :name
   @@all = []
-  
+
   def initialize(name)
     @name = name
-    save  
+    save
   end
 
-  def save 
-    @@all << self 
+  def save
+    @@all << self
   end
 end
