@@ -21,6 +21,7 @@ class Doctor
 
   def new_appointment(date, patient)
     Appointment.new(date, patient, self)
+    binding.pry
   end
 
   def patients
@@ -28,7 +29,7 @@ class Doctor
     Appointment.all.each do |appt|
       if appt.doctor == self
         ps << appt.patient
-        binding.pry
+
       end
     end
     ps
